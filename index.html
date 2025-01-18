@@ -1,10 +1,8 @@
-<!DOCTYPE html>
- <html lang="ja">
- 
-<head>
- 
-<meta charset="UTF-8">
+<!DOCTYPE html> 
 
+<html lang="ja">
+ 
+ <meta charset="UTF-8">
 <title>期末プロジェクト2024秋季</title>
 <link rel="stylesheet" href="mystyle.css">
 <script src="myjs.js"></script>
@@ -16,48 +14,45 @@
    <script src="ex1-5.js"></script>
  <link rel="stylesheet" href="imagechange.css">
  </head>
- <body>
- 
-<body>
- 
-<h1>ドクター・ストレンジ</h1>
-<img src="/Doctor_Strange_Logo.png" alt="Logo" class="imagechange">
-<dl>
-  <dt>登場人物</dt>
-  <dd>ドクター・ストレンジ</dd>
-  <dd>エンシェント・ワン</dd>
-  <dd>ドルマムゥ</dd>
- </dl>
+ <body> 
 
-<table>
-   <caption>
-    <strong>登場人物の説明</strong>
-    <details>
-     <summary>テーブルの説明</summary>
-     <p>以下のテーブルには登場人物ごとの説明が書かれています。
-      左から一列目にドクター・ストレンジ、二列目にエンシェント・ワン、三列目にドルマムゥの説明が書かれています。</p>
-    </details>
-   </caption>
-   <thead>
-    <tr><th>ドクター・ストレンジ</th><th>エンシェント・ワン</th><th>ドルマムゥ</th></tr>
-   </thead>
-   <tbody>
-    <tr><td>さまざまな医療知識に精通し、天才的な医術を持つ神経外科医だったが、事故によってその能力を失い、神秘的な魔術の世界へと足を踏み入れ、魔術師に転身する本作の主人公。</td>
-<td>至高の魔術師“ソーサラー・スプリーム”の称号を持つ、700歳を超えた年齢不詳のケルト人女性の魔術師。その魔力は魔術師の中でも最強を誇り、カエシリウスたちを圧倒する程の実力を持つ。しかし弟子たちには重大な秘密を隠している。</td>
-<td>暗黒次元を支配している邪悪な存在で、飽くなき欲望と無限の力を持つ。</td></tr>
-   </tbody>
-  </table>
-<h1>速読チャレンジ(タイマー)</h1>
-<p>1分タイマーです。１分で読めるでしょうか！</p>
-<form> <input type="button" value="Timer" onclick="setTimeout('mes()',60000)"> </form>
-<h1>物語始まり</h1>
-<form name="timer">
-<input type="button" value="スタート" onclick="hyoji()">
-<br>
-<input type="text" name="moji" size="30" value=""> </form>
-<p>ニューヨークの病院で働く天才外科医、スティーヴン・ストレンジ。ある日交通事故に遭った彼は、外科医としては致命的な、両手にマヒが残るケガをしてしまう。一瞬にしてその輝かしいキャリアを失った彼は、あらゆる治療法を試し、最後にカトマンズの修行場カマー・タージに辿り着く。
-</p>
-
-</body>
+  <h1>モンスターズ・インクについて</h1>
  
+   <input type="button" value="画像の変更" onclick="imgchange1();">
+ <img src='./image/1.jpg' id="monstar" alt="monstar" class="imagechange">
+ <input type="button" value="元に戻す" onclick="imgchange2();"> 
+
+  
+  <h2>モンスターズ・インク 詳しくはこちらから </h2>
+  <nav>
+  <a  href=https://www.disney.co.jp/fc/pixar/monsters-inc/>ここをクリック</a>
+　</nav>
+
+ <h1>~クイズ~</h1>
+ 
+  <p>2分以内に答えてください</p>
+  <form><input type="button" value="start" onclick="setYimeout('mes()',120000)"></form>
+  
+  <h1>No.1</h1>
+　<p>モンスターズ社で1番の怖がらせ屋の青いモンスターの名前は？</p>
+ <p>
+  <input type="text" id="answer">
+  <input type="button" value="解答" onclick="nazo();">
+  </p>
+
+  <h1>No.2</h1>
+  <p>マイクの本名は？</p>
+  <p>
+  <input type="text" id="answer2">
+  <input type="button" value="解答" onclick="nazo2();">
+  </p>
+
+  <h1>No.3</h1>
+  <p>モンスターズ・インクに迷い込んでしまった女の子は？</p>
+  <p>
+  <input type="text" id="answer3">
+  <input type="button" value="解答" onclick="nazo3();">
+  </P>
+ </body>
 </html>
+ 
