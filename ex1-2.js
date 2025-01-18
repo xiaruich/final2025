@@ -1,1 +1,1 @@
-function mes(){alert("2分経ちました！");}
+function mes(){alert("1分経ちました！");}
